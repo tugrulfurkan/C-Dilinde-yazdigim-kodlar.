@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ /* iki noktasinin koordinatlari veren dogrunun orta noktasinin koordinatini hesaplama */
+
+  int x1=0;
+  int y1=0;
+  int x2=0;
+  int y2=0;
+  float orta_noktanin_x=0;
+  float orta_noktanin_y=0;
+  // Bilgi verdigim kisim cunku yanlis girerse sonuc yanlis cikar.
+  printf(" aciklama : iki noktasi bilinen dogrunun koordinatlarini sirasiyla giriniz.!!!\n");
+
+
+ //kullanicidan degerleri aldigim bolum
+  printf("1. noktanin x' inin degerini giriniz:");
+scanf("%d",&x1);
+printf("1. noktanin y' sinin degerini giriniz:");
+scanf("%d",&y1);
+printf("2. noktanin x' inin degerini giriniz:");
+scanf("%d",&x2);
+printf("2. noktanin y' sinin degerini giriniz:");
+scanf("%d",&y2);
+
+
+
+/* degerleri aldiktan sonra orta noktanin koordinatlarini hesaplamak icin formul yazdim
+degerleri almadan once yazsaydim ne  yazarsam yazayim sonucu (0,0) hesaplardi. */
+orta_noktanin_x=(x1+x2)/2.0;
+orta_noktanin_y=(y1+y2)/2.0;
+
+
+// Sonra aldigim sonucu kullaniciya gostermek icin bunu yazdim.
+printf("Orta noktanin koordinatlari: (%f,%f)",orta_noktanin_x,orta_noktanin_y);
+
+
+    return 0;
+}
