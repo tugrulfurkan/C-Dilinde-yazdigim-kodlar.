@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{  /*I will write the codes that calculate the area of ​​the triangle
+     where the base and height values ​​of the triangle are entered as integers. */
+
+     int ucgenin_yuksekligi=0;
+     int ucgenin_kenar_uzunlugu=0;
+     float ucgenin_alani=0;
+
+     printf("ACIKLAMA: Ucgenin yuksekligini ve kenar uzunlugunu tam sayi olarak giriniz\n\n");
+
+     printf("ucgenin kenar uzunlugunu giriniz: ");
+     scanf("%d",&ucgenin_kenar_uzunlugu);
+
+     printf("ucgenin o kenara ait yuksekligini giriniz: ");
+     scanf("%d",&ucgenin_yuksekligi);
+ucgenin_alani=(ucgenin_yuksekligi*ucgenin_kenar_uzunlugu)/2.0;
+
+     printf("Ucgenin alani= %f ",ucgenin_alani);
+
+    return 0;
+}
