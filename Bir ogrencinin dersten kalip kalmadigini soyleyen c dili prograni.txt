@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ /* ilk olarak ben degiskenleri tanimlayacagimm ve deger isteme yazisi yazacagim sonra bunlarlar agirlikli not ortalamasi
+    hesaplayacagim 60 dan buyuk esitse gecer yoksa kalir diyeceegim ve ekranda bunu kullaniciya gosterecegim*/
+
+    int vize_notu=0;
+    int final_notu=0;
+    float agirlikli_not_ortalamasi=0;
+
+    printf("Eger notlarinizi kesirli girerseniz program hata verecektir\n\n");
+
+    printf("Vize notunu giriniz: ");
+    scanf("%d",&vize_notu);
+    printf("Final notunu giriniz: ");
+    scanf("%d",&final_notu);
+
+    agirlikli_not_ortalamasi=(vize_notu*0.4)+(final_notu*0.6);
+
+    if(agirlikli_not_ortalamasi>=60)
+    printf("\nOgrenci dersi gecmistir.");
+    else
+    printf("\nOgrenci dersten kalmistir.");
+
+
+    return 0;
+}
