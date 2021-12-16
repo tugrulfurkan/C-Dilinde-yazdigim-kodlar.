@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int sayi=0;
+int birler_bas=0;
+int onbinler_bas=0;
+int onlar_bas=0;
+int binler_bas=0;
+
+printf("Bilgilendirme:Bes basamakli bir sayi giriniz ve ben size bunun palidrom olup olmadigini soyleyecegim.");
+printf("\nBes basamakli sayiyi giriniz:");
+scanf("%d",&sayi);
+
+birler_bas=sayi%10;
+onlar_bas=(sayi/10)%10;
+binler_bas=(sayi/1000)%10;
+onbinler_bas=(sayi/10000)%10;
+
+if(birler_bas==onbinler_bas && onlar_bas==binler_bas)
+
+    printf("palindrom sayidir.");
+else
+    printf("palindrom sayi degildir.");
+
+
+    return 0;
+}
