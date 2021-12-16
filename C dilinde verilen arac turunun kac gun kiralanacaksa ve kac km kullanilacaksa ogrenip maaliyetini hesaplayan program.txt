@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int gun=0;
+   float km=0;
+   char arac_turu;
+   float odenecek_tutar=0;
+
+   printf("Arac turlerini belirlemek icin asagidaki bilgilendirmeye gore harf giriniz.\n");
+   printf("Gun bilgisini tam sayi orn: 1 ,2,3 gibi sayilar giriniz.\n");
+
+
+        printf("Arazi araci icin='A'veya 'a' harflerinden birini giriniz.\n");
+        printf("Binek araci icin='B' veya 'b' harflerinden birini giriniz.\n");
+        printf("Spor arac icin='P' veya 'p' harflerinden birini giriniz.\n\n ");
+
+            printf("Arac turunu giriniz: ");
+            scanf("%c",&arac_turu);
+            printf("Kac gun kiralayacaginizi yaziniz:");
+            scanf("%d",&gun);
+            printf("Kac km kullanacaginizi yaziniz:");
+            scanf("%f",&km);
+
+            if(arac_turu=='A'||arac_turu=='a')
+                {odenecek_tutar=(20*gun)+(18*km);
+                printf("odenecek tutar=%f",odenecek_tutar);}
+
+                else if(arac_turu=='B'||arac_turu=='b')
+                {odenecek_tutar=(32*gun)+(22*km);
+                 printf("odenecek tutar=%f",odenecek_tutar);}
+
+                 else if(arac_turu=='C'||arac_turu=='c')
+                {odenecek_tutar=(51*gun)+(36*km);
+                printf("odenecek tutar=%f",odenecek_tutar);/* buraya %.2f diye tanimladim  virgulden sonra iki bas
+                gostersin diye ama oyle olmadi neden acaba.*/
+                }
+
+                else
+         printf("Boyle bir arac turu bulunamamaktadir bilgilendirmeyi okuyarak islemi tekrardan yapin.");
+
+
+    return 0;
+}
