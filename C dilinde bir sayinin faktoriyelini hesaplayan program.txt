@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //bir sayinin faktoriyelini hesaplayan programi yaziniz.
+    
+int faktoriyeli=1;
+int sayi=0;
+    
+ printf("faktoriyeli hesaplanacak sayiyi girerken 0 ve  dan buyuk sayilar giriniz\n\n");
+ printf("Faktoriyeli istenen sayiyi giriniz:");
+ scanf("%d",&sayi);
+
+   if(sayi==0)
+   printf("faktoriyeli=1");
+
+     else if(sayi>0)
+    {while(sayi>0)
+    {faktoriyeli=sayi*faktoriyeli;
+    sayi=sayi-1;}
+    printf("faktoriyeli=%d",faktoriyeli);}
+                                                                       
+     else
+   printf("girilen sayiyi yukardaki aciklamayi kontrol ettikten sonra bidaha giriniz.");
+
+   return 0;}
