@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{/*not icin girilen degere ne zaman -1 yazarsan o zaman kapanan ve o zamana kadar
+    yazilan notlarin aritmetik ortalamasini hesaplayan programi yazacagim.*/
+    int not=0;
+    int ogrenci_sayisi=0;
+    float aritmetik_ortalama=0;
+    int toplam_not=0;
+
+    printf("notlari sirayla 'Not:' yazan bolume giriniz.\n");
+printf("not degerini giriniz:");
+scanf("%d",&not);
+    while(not!=-1)
+   {toplam_not=not+toplam_not;
+    ogrenci_sayisi=ogrenci_sayisi+1;
+   printf("Notu giriniz:");
+   scanf("%d",&not);
+   }
+    if(ogrenci_sayisi!=0)
+   {
+    aritmetik_ortalama=toplam_not/ogrenci_sayisi;
+    printf("Not ortalamasi=%.2f",aritmetik_ortalama);
+   }
+    return 0;
+}
