@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+float cevirKG(float para)
+{int bir_TL=0;
+int elli_kurus=0;
+int yirmibes_kurus=0;
+int onkurus=0;
+double kalan=0;
+float toplam_agirlik=0;
+
+ bir_TL=para/1;
+ kalan=para-bir_TL;
+ elli_kurus=kalan/0.5;
+ kalan=kalan-(elli_kurus*0.5);
+ yirmibes_kurus=kalan/0.25;
+ kalan=kalan-(yirmibes_kurus*0.25);
+ onkurus=kalan/0.1;
+ toplam_agirlik=(bir_TL*8.62)+(elli_kurus*6.8)+(yirmibes_kurus*4)+(onkurus*3.15);
+return toplam_agirlik;
+}
+
+int main()
+{  /*kendisine gonderilen para degerinin en az metal bozujlukla odendiginde kac kilo ettigini geriye
+    donduren cevirKG adindaki fonksiyonu para miktarinin klavyeden girildigi ve sonucunun ekrana
+    yazdirildigi bir main fonksiyonu ile beraber yaziniz
+    NOT: 1 tl=8.62 gr   50kr=6.8 gr  25 kr =4 gr  10 kr=3.15 gr
+    */
+  
+float para=0;
+
+printf("5 kurusumuz ve 1 kurusumuz yoktur agirlik hesaplamasi yapilacak para degerini ona gore ayarlayiniz.\n");
+printf("Agirligini hesaplamak istediginiz parayi giriniz:");
+scanf("%f",&para);
+printf("Girilen para degerinin agirligi=%.2f",cevirKG(para));
+
+    return 0;
+}
