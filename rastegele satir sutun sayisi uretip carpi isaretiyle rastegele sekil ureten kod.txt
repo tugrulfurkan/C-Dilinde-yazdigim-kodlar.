@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+void dikdortgenciz(int satir,int sutun)
+{int a=0;
+ int i=0;
+     for(i=1;i<=satir;i++)
+     {for(a=1;a<=sutun;a++)
+      printf("*");
+          printf("\n");
+                        }
+
+}
+int main()
+{/*her cagrildiginda icerisinde uretilen rastgele satir (1 ile 5 arasinda)ve sutun
+(1 ile 10 arasinda )degerine gore, ekran ici * karakterleri
+ ile dolu olan bir dikdortgen cizen dikdortgenciz fonksiyonunu
+main() fonksiyonu
+ile beraber yaziniz.*/
+
+int satir=0;
+int sutun=0;
+
+
+ srand(time(NULL));
+ srand(time(NULL));
+
+  satir=1+rand()%5;
+  sutun=1+rand()%10;
+
+   dikdortgenciz(satir,sutun);
+
+    return 0;
+}
