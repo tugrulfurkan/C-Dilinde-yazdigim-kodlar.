@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+int dizi[5];
+int main()
+{int d=0;
+ int s=0;
+ int a=0;
+ int c=0;
+ int degisici=0;
+
+printf("Bu program girilen elemanlari buyukten kucuge siralar ve girilen elemanlar tamsayi olmalidir.\n");
+
+for(a=0;a<3;a++)
+{printf("dizinin elemanlarini sirasiyla giriniz:");
+scanf("%d",&dizi[a]);}
+
+
+
+for(c=0;c<5;c++)
+{for(d=0;d<5;d++)
+
+{if(c!=d&&dizi[c]>dizi[d])
+{degisici=dizi[c];
+dizi[c]=dizi[d];
+dizi[d]=degisici;}
+}}
+
+
+for(s=0;s<5;s++)
+printf("%d",dizi[s]);
+
+    return 0;
+}
